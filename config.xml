@@ -15,8 +15,6 @@
  	Nicolas Barrera Canales
 	</author>
 	
-	
-	
 	<!--Personaliza la aplicaion y plataforma -->
 	<perference name="orientation"  value="default"/>
 	<!-- <perference name ="orientation" value="portrait"/>
@@ -33,17 +31,9 @@
 	<plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
 	<plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
 	
-	<!-->plugin name="cordova plugin-inappbrowser" spec="~1.0.7/>-->
+	<!--Plugin para geolocalizar--> 
+	<plugin name="cordova-plugin-geolocation" spec="2.4.3"/>
 	
-	<!--<plugin name="cordova-plugin-geolocation" source="npm"/>-->
-	<!-- Third part plugins -->
-	
-	<!--p<ra accesar a paginas de internet-->
-	 <allow-internet href="https://*/*"/>
-	 <acces origin="https://*/*"/>
-	 <allow-internet href="http://*/*"/>
-	 <acces origin="http://*/*"/>
-	 <plugin name="cordova-plugin-whitelist" spec="2.4.3"/>
 	 
 	<!-- Colocar icono app -->
 	
