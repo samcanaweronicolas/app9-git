@@ -5,10 +5,10 @@
      id = "com.phonegap.app9" 
      version  = "1.0.0">  
 	  
- <name> app7 Desplazar hacia la izquierda y a la derecha </name>
+ <name> app9 GEolocalizacion </name>
  
  <description>
- Aplicacion que realiza el swipe o desplazamiento del dispocitivo
+ Muestra la ubicacion del dispocitivo de acuerdo al GPS
  </description>
  
  <author href="https://build.poneghap.com" email = "nicolaswer08@gmail.com">
