@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+ <widget xmlns   = "http://www.w3.org/ns/widgets"  
+     xmlns:gap = "http://phonegap.com/ns/1.0"  
+     id = "com.phonegap.app9" 
+     version  = "1.0.0">  
+	  
+ <name> app7 Desplazar hacia la izquierda y a la derecha </name>
+ 
+ <description>
+ Aplicacion que realiza el swipe o desplazamiento del dispocitivo
+ </description>
+ 
+ <author href="https://build.poneghap.com" email = "nicolaswer08@gmail.com">
+ 	Nicolas Barrera Canales
+	</author>
+	
+	
+	
+	<!--Personaliza la aplicaion y plataforma -->
+	<perference name="orientation"  value="default"/>
+	<!-- <perference name ="orientation" value="portrait"/>
+	<preference name="orientation" value="landscape"/> -->
+	<perference name="target-device"  value="universal"/>
+	<perference name="fullscreen"  value="true"/>
+	<perference name="android-installLocation"  value="auto"/>	
+	<perference name="permissions"  value="INTERNET"/>
+	
+	
+	<!-- Plugins -->
+	<!--Core plugins-->
+	<plugin name="cordova-plugin-device" spec="~1.1.4"/>
+	<plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
+	<plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
+	
+	<!-->plugin name="cordova plugin-inappbrowser" spec="~1.0.7/>-->
+	
+	<!--<plugin name="cordova-plugin-geolocation" source="npm"/>-->
+	<!-- Third part plugins -->
+	
+	<!--p<ra accesar a paginas de internet-->
+	 <allow-internet href="https://*/*"/>
+	 <acces origin="https://*/*"/>
+	 <allow-internet href="http://*/*"/>
+	 <acces origin="http://*/*"/>
+	 <plugin name="cordova-plugin-whitelist" spec="2.4.3"/>
+	 
+	<!-- Colocar icono app -->
+	
+	<icon src="res/android/mdpi.png"/>
+	
+	</widget>
+	 
+ 
