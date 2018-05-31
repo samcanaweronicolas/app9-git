@@ -21,7 +21,6 @@
 	 var options={
 		 enableHighAccuracy : true,
 		 maximumAge: 3600000
-		 
 	 }
 	 
 	 var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
@@ -37,7 +36,7 @@
 		 'Timestamp:'    +position.timestamp   +'\n');
 	 };
 	 function onError(error){
-		 alert('code:'  +error.code  + +'\n' + 'message:' + error.message +'\n');
+		 alert('code:'  +error.code   +'\n' + 'message:' + error.message +'\n');
 	 }
  }
  
@@ -45,14 +44,14 @@
 	 var options={
 		 maximumAge: 3600000,
 		 timeout: 3000,
-		 enableHighAccuracy : true,
+		 enableHighAccuracy :true,
 		 
 	 }
 	 
-	 var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
+	 var watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
 	 function onSuccess(position){
 		 
-		 alert('latitud:').html(position.coords.latitude);
+		 alert('#latitud:').html(position.coords.latitude);
 		 $('#longitud:').html(position.coords.longitude);
 		 $('#altitud:').html(position.coords.altitude);
 		 $('#accuracy:').html(position.coords.accuracy);
@@ -62,6 +61,6 @@
 		 $('#timestamp:').html(position.timestamp);
 	 };
 	 function onError(error){
-		 alert('code:'  +error.code  + +'\n' + 'message:' + error.message +'\n');
+		 alert('code:'  +error.code  +'\n' + 'message:' + error.message +'\n');
 	 }
  }
